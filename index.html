@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Energy-Efficient CPU Scheduling</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js -->
+</head>
+<body>
+    <h1>Energy-Efficient CPU Scheduling</h1>
+    <div class="task-form">
+        <input type="number" id="taskId" placeholder="Task ID">
+        <select id="priority">
+            <option value="1">High Priority</option>
+            <option value="2">Medium Priority</option>
+            <option value="3">Low Priority</option>
+        </select>
+        <input type="number" id="executionTime" placeholder="Execution Time (ms)">
+        <input type="number" id="powerConsumption" placeholder="Power Consumption (mW)">
+        <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <div class="controls">
+        <button onclick="displayTasks()">Display Tasks</button>
+        <button onclick="startScheduling()">Start Scheduling</button>
+    </div>
+
+    <div id="output"></div>
+    <div class="container">
+        <div class="output-section">
+          <pre id="output"></pre>
+        </div>
+        <div class="chart-section">
+          <canvas id="cpuModeChart" style="width: 100%; max-width: 400px; height: auto; margin: 20px auto;"></canvas>
+        </div>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>

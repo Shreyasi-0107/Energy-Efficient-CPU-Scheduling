@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.task-form, .controls {
+    margin: 20px 0;
+}
+
+input, select {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#output {
+    margin-top: 30px;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+canvas {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 400px; /* limit chart width */
+    height: auto;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* good for responsiveness */
+    margin-top: 20px;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  .output-section {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .chart-section {
+    max-width: 400px;
+    flex: 1;
+  }
+  
+  #cpuModeChart {
+    width: 100%;
+    height: auto;
+  }
+  
